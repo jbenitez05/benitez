@@ -1,0 +1,7 @@
+cron
+databases
+errors
+modules/*
+private
+sessions
+uploads
