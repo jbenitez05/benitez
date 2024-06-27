@@ -19,6 +19,7 @@ if session._lang:
     T.force(session._lang)
 else:
     T.force('en')
+    session._lang='en'
     
 if request.global_settings.web2py_version < "2.15.5":
     raise HTTP(500, "Requires web2py 2.15.5 or newer")
@@ -162,3 +163,7 @@ if configuration.get('scheduler.enabled'):
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------
 # auth.enable_record_versioning(db)
+
+
+telegram_token = configuration.get('telegram.token') or "111"
+chat_id = configuration.get('telegram.chat_id') or "111"

@@ -13,8 +13,8 @@
                 <div class="text">
                     <span class="subheading">{{=T('Hello!')}}</span>
                   <h1 class="mb-4 mt-3">I'm <span>Jorge Benítez</span></h1>
-                  <h2 class="mb-4">A Freelance Full-Stack Developer</h2>
-                  <p><a href="#" class="btn btn-primary py-3 px-4">{{=T('Hire me')}}</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">{{=T('My works')}}</a></p>
+                  <h2 class="mb-4">{{=T('A Freelance Full Stack and DevOps Engineer')}}</h2>
+                  <p><a href="#contact-section" class="btn btn-primary py-3 px-4">{{=T('Hire me')}}</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">{{=T('My works')}}</a></p>
               </div>
             </div>
           </div>
@@ -31,8 +31,8 @@
             <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 <div class="text">
                     <span class="subheading">{{=T('Hello!')}}</span>
-                  <h1 class="mb-4 mt-3">{{=T("I'm a ")}}<span>{{=T('developer')}}</span> {{=T('based in Bogotá')}}</h1>
-                  <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">{{=T('My works')}}</a></p>
+                  <h1 class="mb-4 mt-3">{{=T("I'm a ")}}<span>{{=T('DevOps')}}</span> {{=T('based in Bogotá')}}</h1>
+                  <p><a href="#contact-section" class="btn btn-primary py-3 px-4">{{=T('Hire me')}}</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">{{=T('My works')}}</a></p>
               </div>
             </div>
           </div>
@@ -186,8 +186,8 @@
       <div class="container">
           <div class="row justify-content-center pb-5">
     <div class="col-md-12 heading-section text-center ftco-animate">
-        <h1 class="big big-2">Skills</h1>
-      <h2 class="mb-4">My Skills</h2>
+        <h1 class="big big-2">{{=T('Skills')}}</h1>
+      <h2 class="mb-4">{{=T('My Skills')}}</h2>
       <p>Texto pendiente</p>
     </div>
   </div>
@@ -215,6 +215,17 @@
                   </div>
               </div>
               <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                    <h3>JavaScript</h3>
+                    <div class="progress">
+                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        <span>80%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-6 animate-box">
                   <div class="progress-wrap ftco-animate">
                       <h3>HTML5</h3>
                       <div class="progress">
@@ -236,6 +247,39 @@
                       </div>
                   </div>
               </div>
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                    <h3>Linux</h3>
+                    <div class="progress">
+                         <div class="progress-bar color-4" role="progressbar" aria-valuenow="99"
+                          aria-valuemin="0" aria-valuemax="100" style="width:99%">
+                        <span>99%</span>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                    <h3>Shell Scripting</h3>
+                    <div class="progress">
+                        <div class="progress-bar color-4" role="progressbar" aria-valuenow="99"
+                          aria-valuemin="0" aria-valuemax="100" style="width:99%">
+                        <span>99%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 animate-box">
+              <div class="progress-wrap ftco-animate">
+                  <h3>{{=T('Teaching')}}</h3>
+                  <div class="progress">
+                       <div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                      <span>90%</span>
+                        </div>
+                  </div>
+              </div>
+          </div>
               
               
           </div>
@@ -357,8 +401,8 @@
 <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
     <div class="col-md-7 heading-section text-center ftco-animate">
-      <h1 class="big big-2">Contact</h1>
-      <h2 class="mb-4">Contact Me</h2>
+      <h1 class="big big-2">{{=T('Contact')}}</h1>
+      <h2 class="mb-4">{{=T('Contact Me')}}</h2>
       <p>Texto pendiente</p>
     </div>
   </div>
@@ -369,7 +413,7 @@
             <div class="icon d-flex align-items-center justify-content-center">
                 <span class="icon-map-signs"></span>
             </div>
-            <h3 class="mb-4">Address</h3>
+            <h3 class="mb-4">{{=T('Address')}}</h3>
           <p>Bogotá DC - Colombia</p>
         </div>
     </div>
@@ -378,44 +422,44 @@
             <div class="icon d-flex align-items-center justify-content-center">
                 <span class="icon-phone2"></span>
             </div>
-            <h3 class="mb-4">Contact Number</h3>
+            <h3 class="mb-4">{{=T('Contact Number')}}</h3>
           <p><a href="tel://1234567920">+57 350 549 3094</a></p>
         </div>
     </div>
     <div class="col-md-6 col-lg-3 d-flex ftco-animate">
         <div class="align-self-stretch box p-4 text-center">
             <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
+                <span class="icon-mail-forward"></span>
             </div>
-            <h3 class="mb-4">Email Address</h3>
+            <h3 class="mb-4">{{=T('Email Address')}}</h3>
           <p><a href="mailto:info@benitez.pro">jorge@benitez.pro</a></p>
         </div>
     </div>
     <div class="col-md-6 col-lg-3 d-flex ftco-animate">
         <div class="align-self-stretch box p-4 text-center">
             <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-globe"></span>
+                <span class="icon-github"></span>
             </div>
-            <h3 class="mb-4">Website</h3>
-          <p><a href="#">benitez.pro</a></p>
+            <h3 class="mb-4">Github</h3>
+          <p><a href="https://github.com/jbenitez05">github.com/jbenitez05</a></p>
         </div>
     </div>
   </div>
 
   <div class="row no-gutters block-9">
     <div class="col-md-6 order-md-last d-flex">
-      <form action="#" class="bg-light p-4 p-md-5 contact-form">
+      <form action="#" class="bg-light p-4 p-md-5 contact-form" id="contact-form">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Your Name">
+          <input type="text" id="name" class="form-control" placeholder="{{=T('Your Name')}}" required>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Your Email">
+          <input type="text" id="email" class="form-control" placeholder="{{=T('Your Email')}}" required>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Subject">
+          <input type="text" id="subject" class="form-control" placeholder="{{=T('Subject')}}" required>
         </div>
         <div class="form-group">
-          <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+          <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="{{=T('Message')}}" required></textarea>
         </div>
         <div class="form-group">
           <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -430,3 +474,38 @@
   </div>
 </div>
 </section>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    const data = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+    };
+
+    fetch('{{=URL('default','api')}}', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        // Aquí puedes mostrar un mensaje de éxito al usuario
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        // Aquí puedes mostrar un mensaje de error al usuario
+    });
+});
+</script>

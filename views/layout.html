@@ -30,7 +30,7 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Jorge</a>
+	      <a class="navbar-brand" href="{{=URL('default','index')}}">Jorge</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -44,6 +44,15 @@
 	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>{{=T('Skills')}}</span></a></li>
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>{{=T('Projects')}}</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>{{=T('Contact')}}</span></a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{=session._lang.upper()}}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{=URL(r=request,args=request.args,vars=dict(_lang='es'))}}" style="{{='display:none' if session._lang == 'es' else ''}}">ES</a>
+                <a class="dropdown-item" href="{{=URL(r=request,args=request.args,vars=dict(_lang='en'))}}" style="{{='display:none' if session._lang == 'en' else ''}}">EN</a>
+              </div>
+            </li>
 	        </ul>
 	      </div>
 	    </div>
@@ -61,9 +70,8 @@
               <h2 class="ftco-heading-2">About</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://x.com/JoyBenitez"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/joybenitez05/"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
