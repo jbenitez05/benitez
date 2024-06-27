@@ -2,6 +2,7 @@ cron
 databases
 errors
 modules/*
+!modules/utilities.py
 private
 sessions
 uploads
