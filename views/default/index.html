@@ -12,7 +12,7 @@
             <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 <div class="text">
                     <span class="subheading">{{=T('Hello!')}}</span>
-                  <h1 class="mb-4 mt-3">I'm <span>Jorge Benítez</span></h1>
+                  <h1 class="mb-4 mt-3">{{=T("I'm")}} <span>Jorge Benítez</span></h1>
                   <h2 class="mb-4">{{=T('A Freelance Full Stack and DevOps Engineer')}}</h2>
                   <p><a href="#contact-section" class="btn btn-primary py-3 px-4">{{=T('Hire me')}}</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">{{=T('My works')}}</a></p>
               </div>
@@ -71,7 +71,7 @@
               <span class="number" data-number="12">0</span>
               <span>{{=T('Projects complete')}}</span>
           </p>
-          <p><a href="#" class="btn btn-primary py-3 px-3">{{=T('Download CV')}}</a></p>
+          <p style="display: none;"><a href="#" class="btn btn-primary py-3 px-3">{{=T('Download CV')}}</a></p>
         </div>
         </div>
       </div>
@@ -79,26 +79,82 @@
   </div>
 </section>
 
-<section class="ftco-section ftco-no-pb" id="resume-section" style="display: none;">
+<section class="ftco-section ftco-no-pb" id="resume-section">
   <div class="container">
       <div class="row justify-content-center pb-5">
     <div class="col-md-10 heading-section text-center ftco-animate">
-        <h1 class="big big-2">Resume</h1>
-      <h2 class="mb-4">Resume</h2>
+        <h1 class="big big-2">{{=T('Resume')}}</h1>
+      <h2 class="mb-4">{{=T('Resume')}}</h2>
       <p>Este texto debo escribirlo</p>
     </div>
   </div>
       <div class="row">
           <div class="col-md-6">
-              <div class="resume-wrap ftco-animate">
-                  <span class="date">2014-2015</span>
-                  <h2>Master Degree of Design</h2>
-                  <span class="position">Cambridge University</span>
-                  <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>    				
-          </div>    			
+            <div class="resume-wrap ftco-animate">
+                <span class="date">2023-{{=T('Present')}}</span>
+                <h2>{{=T('Computer Systems Engineer')}}</h2>
+                <span class="position">{{=T('Latin American Technological University Online')}}</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">{{=T('November')}} 2022</span>
+              <h2>{{=T('Using Python to Access Web Data')}}</h2>
+              <span class="position">{{=T('University of Michigan')}} - H72UCNK7E5QC</span>
+            </div> 
+            <div class="resume-wrap ftco-animate">
+              <span class="date">{{=T('January')}} 2021</span>
+              <h2>{{=T('Programming for Everybody (Getting Started with Python)')}}</h2>
+              <span class="position">{{=T('University of Michigan')}} - FTYER483JLEV</span>
+            </div>              
+            <div class="resume-wrap ftco-animate">
+                <span class="date">{{=T('June')}} 2015</span>
+                <h2>{{=T('Home Automation Fundamentals with Free Hardware')}}</h2>
+                <span class="position">Latinux</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">{{=T('November')}} 2015</span>
+              <h2>{{=T('Certified Linux Security Administrator')}}</h2>
+              <span class="position">Latinux - VE2YEB63E32CLSA</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">{{=T('April')}} 2014</span>
+              <h2>{{=T('Certified Linux Administrator')}}</h2>
+              <span class="position">Latinux - VE2YEB00442CLA</span>
+            </div> 
+          </div>    
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">{{=T('March')}} 2023</span>
+              <h2>{{=T('WhatsApp Business Platform for Developers')}}</h2>
+              <span class="position">Meta - JGYELZHLGHNL</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">{{=T('May')}} 2021</span>
+              <h2>{{=T('Python Data Structures')}}</h2>
+              <span class="position">{{=T('University of Michigan')}} - 357DKK8KJXAF</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2009-2013</span>
+              <h2>{{=T('Higher University Technician in Electronic Technology')}}</h2>
+              <span class="position">{{=('Simon Bolivar University')}}</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">{{=T('September')}} 2015</span>
+              <h2>{{=T('Certified Linux Network Administrator')}}</h2>
+              <span class="position">Latinux - VE2YEB878D1CLNA</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">{{=T('June')}} 2013</span>
+              <h2>{{=T('Rapid Development of Web Applications')}}</h2>
+              <span class="position">Latinux</span>
+            </div> 
+            <div class="resume-wrap ftco-animate">
+              <span class="date">{{=T('August')}} 2013</span>
+              <h2>{{=T('Certified Linux Operator')}}</h2>
+              <span class="position">Latinux - VE2YEB80D21CLO</span>
+            </div> 			
+        </div>    			
       </div>
-      <div class="row justify-content-center mt-5">
+      <div class="row justify-content-center mt-5" style="display:none">
           <div class="col-md-6 text-center ftco-animate">
               <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
           </div>
@@ -181,88 +237,65 @@
   </div>
 </section>
 
-  
-  <section class="ftco-section" id="skills-section">
-      <div class="container">
-          <div class="row justify-content-center pb-5">
-    <div class="col-md-12 heading-section text-center ftco-animate">
-        <h1 class="big big-2">{{=T('Skills')}}</h1>
-      <h2 class="mb-4">{{=T('My Skills')}}</h2>
-      <p>Texto pendiente</p>
-    </div>
+<section class="ftco-section" id="skills-section">
+    <div class="container">
+        <div class="row justify-content-center pb-5">
+  <div class="col-md-12 heading-section text-center ftco-animate">
+      <h1 class="big big-2">{{=T('Skills')}}</h1>
+    <h2 class="mb-4">{{=T('My Skills')}}</h2>
+    <p>Texto pendiente</p>
   </div>
-          <div class="row">
-              <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                      <h3>Python</h3>
-                      <div class="progress">
-                           <div class="progress-bar color-1" role="progressbar" aria-valuenow="99"
-                            aria-valuemin="0" aria-valuemax="100" style="width:99%">
-                          <span>99%</span>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                      <h3>SQL</h3>
-                      <div class="progress">
-                           <div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-                            aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                          <span>85%</span>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6 animate-box">
+</div>
+        <div class="row">
+            <div class="col-md-6 animate-box">
                 <div class="progress-wrap ftco-animate">
-                    <h3>JavaScript</h3>
+                    <h3>Python</h3>
                     <div class="progress">
-                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-                          aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                        <span>80%</span>
-                          </div>
-                    </div>
-                </div>
-            </div>
-              <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                      <h3>HTML5</h3>
-                      <div class="progress">
-                           <div class="progress-bar color-3" role="progressbar" aria-valuenow="99"
-                            aria-valuemin="0" aria-valuemax="100" style="width:99%">
-                          <span>99%</span>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6 animate-box">
-                  <div class="progress-wrap ftco-animate">
-                      <h3>CSS3</h3>
-                      <div class="progress">
-                           <div class="progress-bar color-4" role="progressbar" aria-valuenow="99"
-                            aria-valuemin="0" aria-valuemax="100" style="width:99%">
-                          <span>99%</span>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Linux</h3>
-                    <div class="progress">
-                         <div class="progress-bar color-4" role="progressbar" aria-valuenow="99"
+                          <div class="progress-bar color-1" role="progressbar" aria-valuenow="99"
                           aria-valuemin="0" aria-valuemax="100" style="width:99%">
                         <span>99%</span>
                           </div>
                     </div>
                 </div>
-              </div>
-              <div class="col-md-6 animate-box">
+            </div>
+            <div class="col-md-6 animate-box">
                 <div class="progress-wrap ftco-animate">
-                    <h3>Shell Scripting</h3>
+                    <h3>SQL</h3>
                     <div class="progress">
-                        <div class="progress-bar color-4" role="progressbar" aria-valuenow="99"
+                          <div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+                          aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                        <span>85%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 animate-box">
+              <div class="progress-wrap ftco-animate">
+                  <h3>JavaScript</h3>
+                  <div class="progress">
+                        <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      <span>80%</span>
+                        </div>
+                  </div>
+              </div>
+          </div>
+            <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                    <h3>HTML5</h3>
+                    <div class="progress">
+                          <div class="progress-bar color-3" role="progressbar" aria-valuenow="99"
+                          aria-valuemin="0" aria-valuemax="100" style="width:99%">
+                        <span>99%</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                    <h3>CSS3</h3>
+                    <div class="progress">
+                          <div class="progress-bar color-4" role="progressbar" aria-valuenow="99"
                           aria-valuemin="0" aria-valuemax="100" style="width:99%">
                         <span>99%</span>
                           </div>
@@ -271,20 +304,42 @@
             </div>
             <div class="col-md-6 animate-box">
               <div class="progress-wrap ftco-animate">
-                  <h3>{{=T('Teaching')}}</h3>
+                  <h3>Linux</h3>
                   <div class="progress">
-                       <div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                      <span>90%</span>
+                        <div class="progress-bar color-4" role="progressbar" aria-valuenow="99"
+                        aria-valuemin="0" aria-valuemax="100" style="width:99%">
+                      <span>99%</span>
+                        </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 animate-box">
+              <div class="progress-wrap ftco-animate">
+                  <h3>Shell Scripting</h3>
+                  <div class="progress">
+                      <div class="progress-bar color-4" role="progressbar" aria-valuenow="99"
+                        aria-valuemin="0" aria-valuemax="100" style="width:99%">
+                      <span>99%</span>
                         </div>
                   </div>
               </div>
           </div>
-              
-              
-          </div>
-      </div>
-  </section> 
+          <div class="col-md-6 animate-box">
+            <div class="progress-wrap ftco-animate">
+                <h3>{{=T('Teaching')}}</h3>
+                <div class="progress">
+                      <div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    <span>90%</span>
+                      </div>
+                </div>
+            </div>
+        </div>
+            
+            
+        </div>
+    </div>
+</section> 
 
 <section class="ftco-section ftco-project" id="projects-section" style="display: none;">
   <div class="container">
