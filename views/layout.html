@@ -1,9 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{=session._lang}}">
   <head>
-    <title>Jorge Benítez</title>
+    <title>{{=T("Jorge Benítez's website")}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO tags  -->
+    <meta name="keywords" content="Software development, full stack, Linux, shell scripting, Python, technological solutions, innovation, electronics, web development, programming, efficiency, quality, IT services, technology consulting, custom projects, DevOps, automation, backend, frontend, software engineering, databases, software architecture, cybersecurity, agile methodologies, cloud computing, Desarrollo de software, full stack, Linux, shell scripting, Python, soluciones tecnológicas, innovación, electrónica, desarrollo web, programación, eficiencia, calidad, servicios de TI, consultoría tecnológica, proyectos personalizados, DevOps, automatización, backend, frontend, ingeniería de software, bases de datos, arquitectura de software, seguridad informática, metodologías ágiles, cloud computing">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="{{='Spanish' if session._lang == 'es' else 'English'}}">
+    <meta name="revisit-after" content="10 days">
+    <meta name="author" content="Jorge Benítez">
+
+
+    <meta property="og:url" content="https://benitez.pro/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{=T("Jorge Benítez's website")}}">
+    <meta property="og:description" content="{{=T("I'm a full stack developer specializing in Linux, shell scripting, and Python. I offer innovative and efficient technological solutions focused on quality and excellence to help you achieve your goals. Contact me to take your project to the next level!")}}">
+    <meta property="og:image" content="{{=URL('static','images/j5.png')}}">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="benitez.pro/">
+    <meta property="twitter:url" content="https://benitez.pro/">
+    <meta name="twitter:title" content="{{=T("Jorge Benítez's website")}}">
+    <meta name="twitter:description" content="{{=T("I'm a full stack developer specializing in Linux, shell scripting, and Python. I offer innovative and efficient technological solutions focused on quality and excellence to help you achieve your goals. Contact me to take your project to the next level!")}}">
+    <meta name="twitter:image" content="{{=URL('static','images/j5.png')}}">
+
+
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
