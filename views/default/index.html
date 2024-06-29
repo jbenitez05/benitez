@@ -6,7 +6,7 @@
         <div class="overlay"></div>
       <div class="container">
         <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-            <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+            <div class="one-third js-fullheight order-md-last img" style="display:none;background-image: url( {{=URL('static','images/bg_1.png')}} );">
                 <div class="overlay"></div>
             </div>
             <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -25,7 +25,7 @@
         <div class="overlay"></div>
       <div class="container">
         <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-            <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_2.png);">
+            <div class="one-third js-fullheight order-md-last img" style="display:none;background-image: url( {{=URL('static','images/bg_2.png')}} );">
                 <div class="overlay"></div>
             </div>
             <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -47,7 +47,7 @@
           <div class="col-md-6 col-lg-5 d-flex">
               <div class="img-about img d-flex align-items-stretch">
                   <div class="overlay"></div>
-                  <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/bg_1.png);">
+                  <div class="img d-flex align-self-stretch align-items-center" style="background-image: url( {{=URL('static','images/')}} );">
                   </div>
               </div>
           </div>
@@ -166,73 +166,73 @@
   <div class="container">
       <div class="row justify-content-center py-5 mt-5">
     <div class="col-md-12 heading-section text-center ftco-animate">
-        <h1 class="big big-2">Services</h1>
-      <h2 class="mb-4">Services</h2>
-      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+        <h1 class="big big-2">{{=T('Services')}}</h1>
+      <h2 class="mb-4">{{=T('Services')}}</h2>
+      <p>{{=T("I offer personalized software development services, specializing in full stack solutions. Let's talk about how I can help you achieve your goals!")}}</p>
     </div>
   </div>
-      <div class="row">
+      <div class="row">  
               <div class="col-md-4 text-center d-flex ftco-animate">
                   <a href="#" class="services-1">
                       <span class="icon">
-                          <i class="flaticon-analysis"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
                       </span>
                       <div class="desc">
-                          <h3 class="mb-5">Web Design</h3>
+                          <h3 class="mb-5">{{=T('Web Developing')}}</h3>
                       </div>
                   </a>
               </div>
               <div class="col-md-4 text-center d-flex ftco-animate">
                   <a href="#" class="services-1">
                       <span class="icon">
-                          <i class="flaticon-flasks"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m273.7-144.5 47.9-83a10 10 0 1 0 -17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0 -246.6 0L116.2 64.5a10 10 0 1 0 -17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384H576c-8.2-98.5-64.5-181.8-146.9-226.6"/></svg>
                       </span>
                       <div class="desc">
-                          <h3 class="mb-5">Phtography</h3>
+                          <h3 class="mb-5">{{=T('App Developing')}}</h3>
                       </div>
                   </a>
               </div>
               <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a href="#" class="services-1">
-                      <span class="icon">
-                          <i class="flaticon-ideas"></i>
-                      </span>
-                      <div class="desc">
-                          <h3 class="mb-5">Web Developer</h3>
-                      </div>
-                  </a>
+                <a href="#" class="services-1">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M220.6 121.2L271.1 96 448 96v96H333.2c-21.9-15.1-48.5-24-77.2-24s-55.2 8.9-77.2 24H64V128H192c9.9 0 19.7-2.3 28.6-6.8zM0 128V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H271.1c-9.9 0-19.7 2.3-28.6 6.8L192 64H160V48c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16l0 16C28.7 64 0 92.7 0 128zM168 304a88 88 0 1 1 176 0 88 88 0 1 1 -176 0z"/></svg>
+                    </span>
+                    <div class="desc">
+                        <h3 class="mb-5">{{=T('Web Design')}}</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 text-center d-flex ftco-animate">
+              <a href="#" class="services-1">
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>
+                  </span>
+                  <div class="desc">
+                      <h3 class="mb-5">{{=T('Data Analysis')}}</h3>
+                  </div>
+              </a>
+          </div>
+          <div class="col-md-4 text-center d-flex ftco-animate">
+            <a href="#" class="services-1">
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M368.4 18.3L312.7 74.1 437.9 199.3l55.7-55.7c21.9-21.9 21.9-57.3 0-79.2L447.6 18.3c-21.9-21.9-57.3-21.9-79.2 0zM288 94.6l-9.2 2.8L134.7 140.6c-19.9 6-35.7 21.2-42.3 41L3.8 445.8c-3.8 11.3-1 23.9 7.3 32.4L164.7 324.7c-3-6.3-4.7-13.3-4.7-20.7c0-26.5 21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48c-7.4 0-14.4-1.7-20.7-4.7L33.7 500.9c8.6 8.3 21.1 11.2 32.4 7.3l264.3-88.6c19.7-6.6 35-22.4 41-42.3l43.2-144.1 2.8-9.2L288 94.6z"/></svg>
+                </span>
+                <div class="desc">
+                    <h3 class="mb-5">{{=T('Illustration')}}</h3>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="#" class="services-1">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+              </span>
+              <div class="desc">
+                  <h3 class="mb-5">{{=T('Hosting')}}</h3>
               </div>
-
-              <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a href="#" class="services-1">
-                      <span class="icon">
-                          <i class="flaticon-analysis"></i>
-                      </span>
-                      <div class="desc">
-                          <h3 class="mb-5">App Developing</h3>
-                      </div>
-                  </a>
-              </div>
-              <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a href="#" class="services-1">
-                      <span class="icon">
-                          <i class="flaticon-flasks"></i>
-                      </span>
-                      <div class="desc">
-                          <h3 class="mb-5">Branding</h3>
-                      </div>
-                  </a>
-              </div>
-              <div class="col-md-4 text-center d-flex ftco-animate">
-                  <a href="#" class="services-1">
-                      <span class="icon">
-                          <i class="flaticon-ideas"></i>
-                      </span>
-                      <div class="desc">
-                          <h3 class="mb-5">Product Strategy</h3>
-                      </div>
-                  </a>
-              </div>
+          </a>
+      </div>
           </div>
   </div>
 </section>
@@ -524,8 +524,7 @@
     </div>
 
     <div class="col-md-6 d-flex">
-        <div class="img" style="-webkit-transform: scaleX(-1);
-  transform: scaleX(-1);background-image: url( {{=URL('static','images/jorge2.png')}} );display:none"></div>
+        <div class="img" style="display:none;background-image: url( {{=URL('static','images/about.jpg')}} );"></div>
     </div>
   </div>
 </div>
