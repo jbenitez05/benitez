@@ -14,7 +14,7 @@
                     <span class="subheading">{{=T('Hello!')}}</span>
                   <h1 class="mb-4 mt-3">{{=T("I'm")}} <span>Jorge Benítez</span></h1>
                   <h2 class="mb-4">{{=T('A Freelance Full Stack and DevOps Engineer')}}</h2>
-                  <p><a href="#contact-section" class="btn btn-primary py-3 px-4">{{=T('Hire me')}}</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">{{=T('My works')}}</a></p>
+                  <p><a href="#contact-section" class="btn btn-primary py-3 px-4">{{=T('Hire me')}}</a> <a href="#services-section" class="btn btn-white btn-outline-white py-3 px-4">{{=T('Services')}}</a></p>
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@
                 <div class="text">
                     <span class="subheading">{{=T('Hello!')}}</span>
                   <h1 class="mb-4 mt-3">{{=T("I'm a ")}}<span>{{=T('DevOps')}}</span> {{=T('based in Bogotá')}}</h1>
-                  <p><a href="#contact-section" class="btn btn-primary py-3 px-4">{{=T('Hire me')}}</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">{{=T('My works')}}</a></p>
+                  <p><a href="#contact-section" class="btn btn-primary py-3 px-4">{{=T('Hire me')}}</a> <a href="#services-section" class="btn btn-white btn-outline-white py-3 px-4">{{=T('Services')}}</a></p>
               </div>
             </div>
           </div>
@@ -586,11 +586,20 @@
     .then(response => response.json())
     .then(data => {
         console.log('Success:', data);
-        // Aquí puedes mostrar un mensaje de éxito al usuario
+        document.getElementById('contact-form').reset();
+        Swal.fire({
+          title: "{{=T('Thanks!')}}",
+          text: "{{=T('Your message has been sent! I will contact you as soon as possible.')}}",
+          icon: "success"
+        });
     })
     .catch((error) => {
         console.error('Error:', error);
-        // Aquí puedes mostrar un mensaje de error al usuario
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "{{=T('Something went wrong!')}}"
+        });
     });
 });
 </script>
