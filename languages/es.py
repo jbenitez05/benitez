@@ -26,7 +26,7 @@
 '@markmin\x01RAM contains items up to **%(hours)02d** %%{hour(hours)} **%(min)02d** %%{minute(min)} **%(sec)02d** %%{second(sec)} old.': 'RAM contains items up to **%(hours)02d** %%{hour(hours)} **%(min)02d** %%{minute(min)} **%(sec)02d** %%{second(sec)} old.',
 '``**not available**``:red (requires the Python [[guppy http://pypi.python.org/pypi/guppy/ popup]] library)': '``**no disponible**``:red (Necesita libreria de Python: [[guppy http://pypi.python.org/pypi/guppy/ popup]])',
 'A Freelance Full Stack and DevOps Engineer': 'Ingeniero Freelance Full Stack y DevOps',
-'A little of this, a little of that. Take a look!': 'Un poco de esto, un poco de aquello. ¡Dale un vistaso!',
+'A little of this, a little of that. Take a look!': 'Un poco de esto, un poco de aquello. ¡Dale un vistazo!',
 'A new password was emailed to you': 'A new password was emailed to you',
 'About': 'Acerca de',
 'About Me': 'Acerca de',
