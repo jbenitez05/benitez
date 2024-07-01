@@ -19,21 +19,21 @@ def index():
 @request.restful()
 def api():    
     def POST(**kargs):
+        response.view = 'generic.json'
         
-        payload = {
-                'chat_id': chat_id,
-                'text': text.format(
-                    name = kargs['name'],
-                    email = kargs['email'],
-                    subject = kargs['subject'],
-                    message = kargs['message'],
-                    lang = session._lang
-                    ),
-                'parse_mode': 'Markdown'
-                }
-    
-        r = requests.post(url = f"https://api.telegram.org/bot{telegram_token}/sendMessage",json=payload)
-        
+        if 'name' in kargs and 'email' in kargs and 'subject' in kargs and 'message' in kargs:        
+            payload = {
+                    'chat_id': chat_id,
+                    'text': text.format(
+                        name = kargs['name'],
+                        email = kargs['email'],
+                        subject = kargs['subject'],
+                        message = kargs['message'],
+                        lang = session._lang
+                        ),
+                    'parse_mode': 'Markdown'
+                    }        
+            r = requests.post(url = f"https://api.telegram.org/bot{telegram_token}/sendMessage",json=payload)        
         return dict()    
     return locals()
 

@@ -141,6 +141,7 @@
 'Hit Ratio: **%(ratio)s%%** (**%(hits)s** %%{hit(hits)} and **%(misses)s** %%{miss(misses)})': 'Hit Ratio: **%(ratio)s%%** (**%(hits)s** %%{hit(hits)} and **%(misses)s** %%{miss(misses)})',
 'Home': 'Inicio',
 'Home Automation Fundamentals with Free Hardware': 'Fundamentos de Domótica con Hardwar Libre',
+'Home Automation Fundamentals with Open Hardware': 'Fundamentos de Domótica con Hardwar Libre',
 'Hosting': 'Alojamiento',
 'How did you get here?': '¿Cómo llegaste aquí?',
 'I am here to help you! If you have a project in mind or need more information about my services, do not hesitate to contact me. I am available to discuss your needs and how I can help achieve your technology goals. I look forward to working with you!': '¡Estoy aquí para ayudarte! Si tienes algún proyecto en mente o necesitas más información sobre mis servicios, no dudes en contactarme. Estoy disponible para discutir tus necesidades y cómo puedo contribuir a alcanzar tus objetivos tecnológicos. ¡Espero con interés trabajar contigo!',
