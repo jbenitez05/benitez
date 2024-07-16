@@ -2,7 +2,7 @@
 <html lang="{{=session._lang}}">
   <head>
     <title>{{=T("Jorge Benítez's website")}}</title>
-    <meta name="description" content="{{=T("I'm a full stack developer specializing in Linux, shell scripting, and Python. I offer innovative and efficient technological solutions focused on quality and excellence to help you achieve your goals. Contact me to take your project to the next level!")}}">"
+    <meta name="description" content="{{=T("I'm a full stack developer specializing in Linux, shell scripting, and Python. I offer innovative and efficient technological solutions focused on quality and excellence to help you achieve your goals. Contact me to take your project to the next level!")}}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,7 +14,6 @@
     <meta name="revisit-after" content="10 days">
     <meta name="author" content="Jorge Benítez">
 
-
     <meta property="og:url" content="https://benitez.pro/">
     <meta property="og:type" content="website">
     <meta property="og:description" content="{{=T("I'm a full stack developer specializing in Linux, shell scripting, and Python. I offer innovative and efficient technological solutions focused on quality and excellence to help you achieve your goals. Contact me to take your project to the next level!")}}">
@@ -25,15 +24,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1440432930" />
 
-
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="benitez.pro/">
     <meta property="twitter:url" content="https://benitez.pro/">
     <meta name="twitter:title" content="{{=T("Jorge Benítez's website")}}">
     <meta name="twitter:description" content="{{=T("I'm a full stack developer specializing in Linux, shell scripting, and Python. I offer innovative and efficient technological solutions focused on quality and excellence to help you achieve your goals. Contact me to take your project to the next level!")}}">
     <meta name="twitter:image" content="{{=URL('static','images/j5_2.png')}}">
-
-
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,23 +57,24 @@
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
+    
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="{{=URL('default','index')}}">Jorge</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+      <div class="container">
+        <a class="navbar-brand" href="{{=URL('default','index')}}">Jorge</a>
+        
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>{{=T('Home')}}</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>{{=T('About')}}</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>{{=T('Resume')}}</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>{{=T('Services')}}</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>{{=T('Skills')}}</span></a></li>
-	          <li class="nav-item" style="display: none;"><a href="#projects-section" class="nav-link"><span>{{=T('Projects')}}</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>{{=T('Contact')}}</span></a></li>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>{{=T('Home')}}</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>{{=T('About')}}</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>{{=T('Resume')}}</span></a></li>
+            <li class="nav-item"><a href="#services-section" class="nav-link"><span>{{=T('Services')}}</span></a></li>
+            <li class="nav-item"><a href="#skills-section" class="nav-link"><span>{{=T('Skills')}}</span></a></li>
+            <li class="nav-item" style="display: none;"><a href="#projects-section" class="nav-link"><span>{{=T('Projects')}}</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>{{=T('Contact')}}</span></a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {{=session._lang.upper()}}
@@ -87,13 +84,13 @@
                 <a class="dropdown-item" href="{{=URL(r=request,args=request.args,vars=dict(_lang='en'))}}" style="{{='display:none' if session._lang == 'en' else ''}}">EN</a>
               </div>
             </li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
-	  {{include}}
+    {{include}}
 		
 
     <footer class="ftco-footer ftco-section">
@@ -124,27 +121,27 @@
             </div>
           </div>
           <div class="col-md" style="display:none">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">{{=T('Services')}}</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
-              </ul>
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">{{=T('Services')}}</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+                </ul>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">{{=T('Have a Questions?')}}</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><a href="https://maps.app.goo.gl/M4BPpnM2tAbVGM8K9" target="_blank"><span class="icon icon-map-marker" style="color: white;"></span><span class="text">Bogotá DC - Colombia</span></a></li>
-	                <li><a href="https://t.me/JoyBenitez" target="_blank"><span class="icon icon-telegram" style="color: white;"></span><span class="text">JoyBenitez</span></a></li>
-	                <li><a href="mailto:jorge@benitez.pro"><span class="icon icon-envelope" style="color: white;"></span><span class="text">jorge@benitez.pro</span></a></li>
-	              </ul>
-	            </div>
+              <h2 class="ftco-heading-2">{{=T('Have a Questions?')}}</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><a href="https://maps.app.goo.gl/M4BPpnM2tAbVGM8K9" target="_blank"><span class="icon icon-map-marker" style="color: white;"></span><span class="text">Bogotá DC - Colombia</span></a></li>
+                  <li><a href="https://t.me/JoyBenitez" target="_blank"><span class="icon icon-telegram" style="color: white;"></span><span class="text">JoyBenitez</span></a></li>
+                  <li><a href="mailto:jorge@benitez.pro"><span class="icon icon-envelope" style="color: white;"></span><span class="text">jorge@benitez.pro</span></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
