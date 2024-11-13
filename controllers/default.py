@@ -16,6 +16,9 @@ Mensaje: {message}
 def index():
     return dict()
 
+def prices():
+    return dict()
+
 @request.restful()
 def api():    
     def POST(**kargs):

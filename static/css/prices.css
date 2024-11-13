@@ -1,0 +1,26 @@
+.card-pricing {
+	border: none;
+	border-radius: 0px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	border-radius: 0px !important;
+}
+.card-header.bg-danger { background-color: #e74c3c !important; }
+.card-header.bg-info { background-color: #3498db !important; }
+.pricing-price {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+}
+.text-feature { font-weight: bold; color: #28a745; }
+.text-limited { font-weight: bold; color: #e74c3c; }
+.btn-buy {
+	width: 100%;
+	font-weight: bold;
+}
